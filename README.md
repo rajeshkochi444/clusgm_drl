@@ -20,7 +20,7 @@ We have developed a pioneering Deep Reinforcement Learning (DRL) framework for e
      eleNums = [20]
      ```
    Example for mutimetallic nanocluster compositions
-   ```python
+    ```python
      eleNames = ['Cu', 'Ag']
      eleNums = [20, 23]
      ```
