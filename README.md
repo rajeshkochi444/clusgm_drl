@@ -8,33 +8,33 @@ We have developed a pioneering Deep Reinforcement Learning (DRL) framework for e
 ### How to Run the Code
 
 1. **Set Up the Environment:**
-   - Install the required Conda environment from the provided YAML file:
+   - Install the required Conda environment using the provided YAML file:
      ```bash
      conda env create -f env_clusgym.yml
      ```
 
 2. **Configure the Nanocluster Composition:**
-   - Edit the `gym_trpo_parallel.py` or `gym_trpo_single.py` file to select the desired nanocluster composition. For example, to simulate a cluster of 20 copper (Cu) atoms:
+   - Edit `gym_trpo_parallel.py` or `gym_trpo_single.py` to select the desired nanocluster composition.
+   - **Monometallic Example:** For simulating a cluster of 20 copper (Cu) atoms:
      ```python
      eleNames = ['Cu']
      eleNums = [20]
      ```
-   Example for mutimetallic nanocluster compositions
-    ```python
+   - **Bimetallic Example:** For simulating a bimetallic cluster of 20 copper (Cu) and 23 silver (Ag) atoms:
+     ```python
      eleNames = ['Cu', 'Ag']
      eleNums = [20, 23]
      ```
-4. **Run the Simulation:**
-   - Execute the script using Python. You can run either the parallel or single version depending on your needs:
+
+3. **Run the Simulation:**
+   - Execute the script using Python. Choose the appropriate version for your needs:
      ```bash
      python gym_trpo_parallel.py  # For parallel execution
      python gym_trpo_single.py    # For single execution
      ```
 
-5. **Utilize the SLURM Script:**
-   - An example SLURM script is provided for running the simulations on clusters. Modify the script as necessary to match your cluster configuration:
+4. **Utilize the SLURM Script:**
+   - Modify and submit the provided SLURM script according to your cluster configuration:
      ```bash
      sbatch slurm_script.sh
      ```
-
-These steps will guide you through running the simulations using the Deep Reinforcement Learning framework for nanoclusters.
