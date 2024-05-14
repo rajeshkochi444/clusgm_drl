@@ -19,15 +19,19 @@ We have developed a pioneering Deep Reinforcement Learning (DRL) framework for e
      eleNames = ['Cu']
      eleNums = [20]
      ```
-
-3. **Run the Simulation:**
+   Example for mutimetallic nanocluster compositions
+   ```python
+     eleNames = ['Cu', 'Ag']
+     eleNums = [20, 23]
+     ```
+4. **Run the Simulation:**
    - Execute the script using Python. You can run either the parallel or single version depending on your needs:
      ```bash
      python gym_trpo_parallel.py  # For parallel execution
      python gym_trpo_single.py    # For single execution
      ```
 
-4. **Utilize the SLURM Script:**
+5. **Utilize the SLURM Script:**
    - An example SLURM script is provided for running the simulations on clusters. Modify the script as necessary to match your cluster configuration:
      ```bash
      sbatch slurm_script.sh
