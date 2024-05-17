@@ -33,7 +33,7 @@ We have developed a pioneering Deep Reinforcement Learning (DRL) framework for e
      python gym_trpo_single.py    # For single execution
      ```
 
-4. **Utilize the SLURM Script:**
+4. **Utilize the SLURM Script (Optional):**
    - Modify and submit the provided SLURM script according to your cluster configuration:
      ```bash
      sbatch slurm_script.sh
