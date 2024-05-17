@@ -19,7 +19,7 @@ num_parallel = 48
 eleNames = ['Cu']
 eleNums = [20]
 clus_seed = None
-save_dir = './result_single_env_ver101-new-2/'
+save_dir = 'result_' + ''.join(f"{name}{num}" for name, num in zip(eleNames, eleNums)) + '/'
 
 
 def setup_env(recording=False):

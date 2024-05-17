@@ -1,4 +1,4 @@
-name: clusgym_small
+name: clusgym
 channels:
   - anaconda
   - conda-forge

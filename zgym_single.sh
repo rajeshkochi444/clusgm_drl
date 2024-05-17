@@ -27,7 +27,7 @@ echo "working directory = "$SLURM_SUBMIT_DIR
 
 #source /rds/projects/2018/johnston-copper-clusters-rr/Rajesh-2/anaconda3/etc/profile.d/conda.sh
 source /network/scratch/r/rajesh.raju/miniforge3/etc/profile.d/conda.sh
-conda activate clusgym_small
+conda activate clusgym
 
 
 echo "Starting at "`date`

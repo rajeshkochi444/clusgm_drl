@@ -14,7 +14,7 @@ import copy
 from callback import Callback
 
 timesteps = 200
-num_parallel = 48
+num_parallel = 24
 #seed = 30
 eleNames = ['Cu']
 eleNums = [ 20]
