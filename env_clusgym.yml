@@ -229,4 +229,3 @@ dependencies:
       - typing-extensions==4.7.1
       - urllib3==1.26.16
       - wrapt==1.14.1
-prefix: /rds/projects/2018/johnston-copper-clusters-rr/Rajesh-2/Anaconda3/envs/clusgym
