@@ -15,7 +15,7 @@ import copy
 import random
 from utils import *
 import itertools
-from generate_descriptors_amptorch import Generate_acsf_descriptor, Generate_soap_descriptor
+from generate_descriptors import Generate_acsf_descriptor, Generate_soap_descriptor
 from mutations import do_nothing, homotop, rattle_mut, rotate_mut, twist, partialInversion, tunnel, skin, changeCore, mate
 
 
