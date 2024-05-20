@@ -36,6 +36,7 @@ def setup_env(recording=False):
                      save_dir = save_dir,
                      timesteps = timesteps,
                      save_every = 1,
+                     n_unique_pool = 25,
                     )
 
 

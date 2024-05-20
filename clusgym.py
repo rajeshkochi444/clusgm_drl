@@ -37,6 +37,7 @@ class MCSEnv(gym.Env):
                  timesteps = None,
                  save_every = None,
                  plot_every = None,
+                 n_unique_pool = None,
                  
                 ):
         
@@ -50,7 +51,7 @@ class MCSEnv(gym.Env):
         self.save_every = save_every
         self.plot_every = plot_every
         self.save_dir = save_dir
-        
+        self.n_unique_pool = n_unique_pool
         self.episodes = 0
         self.counter = 0
 
@@ -282,9 +283,9 @@ class MCSEnv(gym.Env):
             
             if self.episodes % self.save_every == 0:
                 ene_index_list = np.argsort(self.unique_minima_energies)
-                if self.n_unique_minima >= 10:
-                    self.unique_minima = [self.unique_minima[i] for i in ene_index_list[:10]]
-                    self.unique_minima_energies = [self.unique_minima_energies[i] for i in ene_index_list[:10]]
+                if self.n_unique_minima >= self.n_unique_pool:
+                    self.unique_minima = [self.unique_minima[i] for i in ene_index_list[:self.n_unique_pool]]
+                    self.unique_minima_energies = [self.unique_minima_energies[i] for i in ene_index_list[:self.n_unique_pool]]
                 else:
                     self.unique_minima = [self.unique_minima[i] for i in ene_index_list]
                     self.unique_minima_energies = [self.unique_minima_energies[i] for i in ene_index_list]

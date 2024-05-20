@@ -16,8 +16,8 @@ from callback import Callback
 timesteps = 200
 num_parallel = 24
 #seed = 30
-eleNames = ['Cu']
-eleNums = [ 20]
+eleNames = ['Cu', 'Ni', 'Au', 'Pd']
+eleNums = [ 4,5,6,5]
 clus_seed = None
 save_dir =  'result_' + ''.join(f"{name}{num}" for name, num in zip(eleNames, eleNums)) + '/'
 
@@ -37,6 +37,7 @@ def setup_env(recording=False):
                      save_dir = save_dir,
                      timesteps = timesteps,
                      save_every = 1,
+                     n_unique_pool = 25, 
                     )
 
 
