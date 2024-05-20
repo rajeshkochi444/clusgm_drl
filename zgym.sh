@@ -25,13 +25,11 @@ echo "SLURMTMPDIR="$SLURMTMPDIR
 echo "working directory = "$SLURM_SUBMIT_DIR
 
 
-#source /rds/projects/2018/johnston-copper-clusters-rr/Rajesh-2/anaconda3/etc/profile.d/conda.sh
-source /network/scratch/r/rajesh.raju/miniforge3/etc/profile.d/conda.sh
+source /rds/projects/2018/johnston-copper-clusters-rr/Rajesh-2/Anaconda3/etc/profile.d/conda.sh
 conda activate clusgym
 
 
 echo "Starting at "`date`
-#mpirun  gym_trpo_parallel_training_ver50_expt1.py
 python  gym_trpo_parallel.py
 echo "Ending at "`date`
 
